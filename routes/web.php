@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/tc', function () {
-    return view('tc');
-});
+Route::get('/', function () {
+    return view('tc', ['name' => "cao triết bị làm nhục"]);
+})->name('tc');
